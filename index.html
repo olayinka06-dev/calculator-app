@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Olayinka_dev | Calculator app</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 15px; text-align: center; }
+  </style>
+</head>
+<body oncontextmenu="return false">
+    <section class="first">
+      <div class="switcher">
+        <h4>calc</h4>
+        <div class="cont">
+          <h5>THEME</h5>
+          <div class="theme">
+            <div class="changeone change-sub" onclick="menu()"></div>
+            <div class="changetwo" id="btn" onclick="greyshow()"></div>
+            <div class="changeThree" onclick="lastshow()"></div>
+          </div>
+        </div>
+      </div>
+      <input id="show" class="screen" type="text" placeholder="0">
+      <div class="keys">
+        <div class="firstrow">
+          <button class="keybtn" onclick="display('7')">7</button>
+          <button class="keybtn" onclick="display('8')">8</button>
+          <button class="keybtn" onclick="display('9')">9</button>
+          <button class="one" onclick="del()">DEL</button>
+        </div>
+        <div class="firstrow">
+          <button class="keybtn" onclick="display('4')">4</button>
+          <button class="keybtn" onclick="display('5')">5</button>
+          <button class="keybtn" onclick="display('6')">6</button>
+          <button class="keybtn" onclick="display('+')">+</button>
+        </div>
+        <div class="firstrow">
+          <button class="keybtn" onclick="display('1')">1</button>
+          <button class="keybtn" onclick="display('2')">2</button>
+          <button class="keybtn" onclick="display('3')">3</button>
+          <button class="keybtn" onclick="display('-')">-</button>
+        </div>
+        <div class="firstrow">
+          <button class="keybtn" onclick="display('.')">.</button>
+          <button class="keybtn" onclick="display('0')">0</button>
+          <button class="keybtn" onclick="display('/')">/</button>
+          <button class="keybtn" onclick="display('*')">X</button>
+        </div>
+        <div class="secondrow">
+          <button class="one" onclick="erase()">RESET</button>
+          <button class="two" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </section>
+
+  
+    <div class="attribution">
+      <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" >Frontend Mentor</a>. </span>
+      <span>Coded by <a  href="#">Olayinka_Dev</a>.</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bacground);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s ease;
+  max-width: 1440px;
+  min-width: 375px;
+  overflow-x: hidden;
+}
+.first{
+  width: 400px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;    
+}
+.first h4{
+  font-size: 40px;
+}
+.switcher{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--switch);
+}
+.screen{
+  padding: 30px;
+  width: 100%;
+  background-color: var(--screen);
+  border: none;
+  border-radius: 10px;
+  font-size: 35px;
+  outline: none;
+  color: var(--screencolor); 
+  text-align: right;
+}
+.keys{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 15px;
+  background-color:var(--keys) ;
+  border-radius: 15px;
+}
+.firstrow{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.secondrow{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.one{
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--reset);
+  box-shadow: 0px 3px 1px var(--resetshadow);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: var(--resetcolor);
+  font-size: 18px;
+  font-weight: 700;
+}
+.two{
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--equal);
+  box-shadow: 0px 3px 1px var(--equqlshadow);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.del{
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--reset);
+  box-shadow: 0px 3px 1px var(--resetshadow);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.keybtn{
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--keybtn);
+  border: none;
+  outline: none;
+  box-shadow: 0px 3px 1px var(--keybtnshadow);
+  border-radius: 10px;
+  color: var(--keyscolor);
+  font-size: 20px;
+  font-weight: 700;
+}
+.cont{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.cont h5{
+  font-size: 17px;
+}
+.attribution{
+  position: absolute;
+  top: 95%;
+  background-color: var(--bacground);
+}
+.attribution a{
+  font-size: 18px;
+  color: var(--equal);
+}
+.theme{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37,44,70);
+  padding: 5px;
+  border-radius: 30px;
+  transition: all .7s ease; 
+}
+.changeone, .changetwo, .changeThree{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%; 
+  transition: all .7s ease; 
+}
+.change-sub{
+  background-color: hsl(6, 63%, 50%);
+}
+:root{
+  --bacground: hsl(222, 26%, 31%);
+  --screen: hsl(224, 36%, 15%);
+  --keys: hsl(223, 31%, 20%);
+  --reset: hsl(225, 21%, 49%);
+  --resetshadow: hsl(224, 28%, 35%);
+  --equal: hsl(6, 63%, 50%);
+  --equqlshadow: hsl(6, 70%, 34%);
+  --keybtn: hsl(30, 25%, 89%);
+  --keybtnshadow: hsl(28, 16%, 65%);
+  --switch: white;
+  --keyscolor: black;
+  --resetcolor: black;
+  --screencolor: white;
+}
+html[data-theme="first-theme"]{
+  --bacground: hsl(222, 26%, 31%);
+  --screen: hsl(224, 36%, 15%);
+  --keys: hsl(223, 31%, 20%);
+  --reset: hsl(225, 21%, 49%);
+  --resetshadow: hsl(224, 28%, 35%);
+  --equal: hsl(6, 63%, 50%);
+  --equqlshadow: hsl(6, 70%, 34%);
+  --keybtn: hsl(30, 25%, 89%);
+  --keybtnshadow: hsl(28, 16%, 65%);
+  --switch: white;
+  --keyscolor: black;
+  --resetcolor: black;
+  --screencolor: white;
+}
+html[data-theme="second-theme"]{
+  --bacground: hsl(0, 0%, 90%);
+  --screen: hsl(0, 0%, 99%);
+  --keys: hsl(0, 5%, 81%);
+  --reset: hsl(185, 42%, 37%);
+  --resetshadow: hsl(185, 58%, 25%);
+  --equal: hsl(25, 98%, 40%);
+  --equqlshadow: hsl(25, 99%, 27%);
+  --keybtn: hsl(45, 7%, 89%);
+  --keybtnshadow: hsl(35, 11%, 61%);
+  --switch:  hsl(60, 10%, 19%); 
+  --keyscolor:  hsl(60, 10%, 19%); 
+  --resetcolor: hsl(0, 0%, 100%);
+  --screencolor: black;
+
+}
+html[data-theme="third-theme"]{
+  --bacground: hsl(268, 75%, 9%);
+  --screen:  hsl(268, 71%, 12%);
+  --keys:  hsl(268, 71%, 12%);
+  --reset: hsl(281, 89%, 26%);
+  --resetshadow:  hsl(285, 91%, 52%);
+  --equal: hsl(176, 100%, 44%);
+  --equqlshadow: hsl(177, 92%, 70%);
+  --keybtn: hsl(268, 47%, 21%);
+  --keybtnshadow:  hsl(290, 70%, 36%);
+  --switch: hsl(52, 100%, 62%); 
+  --keyscolor: hsl(52, 100%, 62%); 
+  --resetcolor: hsl(0, 0%, 100%);
+  --screencolor: hsl(52, 100%, 62%);
+
+}
+
+
+
