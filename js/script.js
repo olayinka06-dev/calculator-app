@@ -1,17 +1,20 @@
 function display(value) {
-    document.getElementById('show').value += value;
+  document.getElementById('show').value += value;
 }
+
 function calculate() {
-    let p = document.getElementById('show').value;
-    let q = eval(p);
-    document.getElementById('show').value = q;
+  let p = document.getElementById('show').value;
+  p = p.replace(/X/g, '*');
+  let q = eval(p);
+  document.getElementById('show').value = q;
 }
+
 function del() {
-    var show = document.getElementById('show');
-    show.value = show.value.slice(0,-1);
+  var show = document.getElementById('show');
+  show.value = show.value.slice(0,-1);
 }
 function erase() {
-    document.getElementById('show').value = '';
+  document.getElementById('show').value = '';
 }
 
 
